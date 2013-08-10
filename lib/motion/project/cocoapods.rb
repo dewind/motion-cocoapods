@@ -47,7 +47,7 @@ module Motion::Project
         rescue
           need_install = true
         end
-        @pods.install! if need_install && && !ENV['COCOAPODS_NO_INSTALL']
+        @pods.install! if need_install && !ENV['COCOAPODS_NO_INSTALL']
 
         @pods.link_project
       end
